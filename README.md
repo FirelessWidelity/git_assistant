@@ -57,8 +57,15 @@ git status
 ```bash
 git log
 ```
-добавить файлы в удаленный репозиторий
+
+####Привязать удаленный репозиторий к локальному 
 ```bash
+git remote add origin git@github.com:NAME_OF_THE_ACCOUNT/project.git
+```
+
+добавить файлы в удаленный репозиторий в первый раз/в последующие разы
+```bash
+git push -u origin main
 git push
 ```
 
