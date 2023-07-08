@@ -23,6 +23,7 @@ mv <file_before> <file_after>
 ```bash
 git config --global user.name  "NAME"
 git config --global user.email "mail@example.ru" 
+git config --global core.editor vim
 ```
 
 Посмотреть текущий конфиг
