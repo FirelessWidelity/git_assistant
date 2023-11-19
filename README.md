@@ -73,3 +73,16 @@ git push
 ```bash
 git clone <URL>
 ```
+##-----SSH-----
+### Сгенерировать новый ssh-key
+```bash
+ssh-keygen -t ed25519 -C "your@email.com"
+```
+### Скопировать сгенерированный pub-key в буфер:
+```bash
+cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
+```
+### Протестировать ssh-соединение с github:
+```bash
+ssh -T git@github.com
+```
