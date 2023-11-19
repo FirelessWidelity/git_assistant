@@ -73,7 +73,7 @@ git push
 ```bash
 git clone <URL>
 ```
-##-----SSH-----
+## SSH
 ### Сгенерировать новый ssh-key
 ```bash
 ssh-keygen -t ed25519 -C "your@email.com"
