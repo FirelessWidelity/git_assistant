@@ -108,6 +108,7 @@ ctags --c-kinds=+p -R /usr/include/
 ### Настройки для vim
 Искать тэги в данной директории, вплоть до $HOME
 ```bash
+echo -e "set tags=./tags,tags;$HOME" >> ~/.vimrc
 source ~/.vimrc
 ```
 ## Навигация по тэгам
