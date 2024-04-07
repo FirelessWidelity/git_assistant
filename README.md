@@ -58,7 +58,7 @@ git status
 git log
 ```
 
-####Привязать удаленный репозиторий к локальному 
+#### Привязать удаленный репозиторий к локальному 
 ```bash
 git remote add origin git@github.com:NAME_OF_THE_ACCOUNT/project.git
 ```
@@ -68,6 +68,21 @@ git remote add origin git@github.com:NAME_OF_THE_ACCOUNT/project.git
 git push -u origin main
 git push
 ```
+#### Чтобы работать в унисон с проектом, нужно периодически производить merge master-branch всех submodules в рабочую ветку
+```bash
+git checkout <branch-name>
+git merge origin/master
+```
+#### Следующие команды нужно проверить на корректность
+#### Перенести последний commit рабочей ветки на HEAD другой ветки
+```bash
+git cherry-pick commit-hash-1 HEAD-hash
+```
+### Перенести все коммиты данной ветки на HEAD другой ветки
+```bash
+git rebase commit-hash-1 commit-hash-2
+```
+
 
 ### Клонирование существующего репозитория
 ```bash
@@ -120,9 +135,11 @@ vim -t <tagname>
 ```vim
 :ts <tagname>
 ```
-Установить курсор на слово и нажать комбинацию клавиш Ctrl+]
+Установить курсор на слово и нажать комбинацию клавиш 
+#### Ctrl+]
 
-Чтобы вернуться к предыдущему слову, комбинация Ctrl+o
+Чтобы вернуться к предыдущему слову, комбинация
+#### Ctrl+o
 
 Также можно ходить по тэгам с помощью комбинаций tag-next tab-prev:
 ```vim
